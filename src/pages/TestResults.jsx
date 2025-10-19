@@ -1,0 +1,126 @@
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa'
+import { IoReload } from 'react-icons/io5'
+
+function TestResults() {
+  const navigate = useNavigate()
+  const location = useLocation()
+  const answers = location.state?.answers ?? []
+  const usedQuestions = location.state?.usedQuestions ?? []
+  const totalQuestions = answers.length > 0 ? answers.length : usedQuestions.length
+  const correctAnswers = answers.filter((item) => item.isCorrect).length
+  const scorePercent = totalQuestions === 0 ? 0 : Math.round((correctAnswers / totalQuestions) * 100)
+  const cycle = location.state?.cycle ?? 1
+  const poolSize = location.state?.poolSize ?? usedQuestions.length
+
+  if (answers.length === 0 || usedQuestions.length === 0) {
+    return (
+      <section className="mx-auto flex max-w-xl flex-col gap-4 text-center">
+        <h1 className="text-2xl font-semibold text-white">Aún no hay resultados del modo test</h1>
+        <p className="text-slate-300">
+          Comienza el modo test integral para registrar tus respuestas libres y analizar tu desempeño.
+        </p>
+        <Link
+          to="/test"
+          className="mx-auto inline-flex items-center justify-center rounded-full bg-emerald-400 px-5 py-2 text-sm font-semibold text-emerald-950 transition hover:bg-emerald-300"
+        >
+          Ir al modo test
+        </Link>
+      </section>
+    )
+  }
+
+  const breakdown = usedQuestions.map((question) => {
+    const answer = answers.find((item) => item.questionId === question.id)
+    return {
+      question,
+      answered: answer?.selected,
+      isCorrect: answer?.isCorrect ?? false
+    }
+  })
+
+  const handleRetry = () => {
+    navigate('/test')
+  }
+
+  return (
+    <section className="space-y-8">
+      <header className="rounded-3xl border border-slate-800/60 bg-slate-950/70 p-6 shadow-lg">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Resultados modo test</p>
+          <p className="text-xs text-slate-400">Ciclo #{cycle} · Banco total: {poolSize} casos</p>
+        </div>
+        <h1 className="text-3xl font-semibold text-white sm:text-4xl">Guardia integral</h1>
+        <div className="mt-4 flex flex-wrap gap-4">
+          <div className="rounded-2xl border border-emerald-500/40 bg-emerald-500/10 px-5 py-4 text-emerald-200">
+            <p className="text-sm uppercase tracking-[0.2em]">Puntaje</p>
+            <p className="text-3xl font-semibold">{scorePercent}%</p>
+          </div>
+          <div className="rounded-2xl border border-slate-800/80 bg-slate-900/60 px-5 py-4 text-slate-200">
+            <p className="text-sm uppercase tracking-[0.2em]">Respuestas correctas</p>
+            <p className="text-3xl font-semibold">
+              {correctAnswers}/{totalQuestions}
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={handleRetry}
+            className="inline-flex items-center gap-2 rounded-full bg-emerald-400 px-5 py-2 text-sm font-semibold text-emerald-950 transition hover:bg-emerald-300"
+          >
+            <IoReload aria-hidden="true" />
+            Repetir modo test
+          </button>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-transparent px-5 py-2 text-sm font-semibold text-slate-200 transition hover:border-slate-700 hover:text-white"
+          >
+            Seleccionar módulo individual
+          </Link>
+        </div>
+      </header>
+
+      <section className="space-y-4 rounded-3xl border border-slate-800/60 bg-slate-950/70 p-6 shadow-lg">
+        <h2 className="text-lg font-semibold text-white">Análisis caso por caso</h2>
+        <ol className="space-y-5">
+          {breakdown.map(({ question, answered, isCorrect }, index) => (
+            <li key={`${question.moduleId}-${question.id}`} className="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-5">
+              <div className="flex items-start gap-3">
+                {isCorrect ? (
+                  <FaCheckCircle className="mt-1 text-lg text-emerald-400" aria-hidden="true" />
+                ) : (
+                  <FaTimesCircle className="mt-1 text-lg text-rose-400" aria-hidden="true" />
+                )}
+                <div className="space-y-2">
+                  <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+                    <span className="rounded-full border border-slate-800/80 bg-slate-900/60 px-3 py-1">
+                      {question.moduleTitle}
+                    </span>
+                    <span className="rounded-full border border-slate-800/80 bg-slate-900/60 px-3 py-1">
+                      Caso {index + 1}
+                    </span>
+                  </div>
+                  <h3 className="text-base font-medium text-white">{question.question}</h3>
+                  <div className="grid gap-2 text-sm text-slate-300">
+                    <p>
+                      <span className="font-semibold text-slate-100">Tu respuesta: </span>
+                      {answered ?? 'Sin registrar'}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-slate-100">Respuesta esperada: </span>
+                      {question.answer}
+                    </p>
+                    <p className="text-slate-400">{question.explanation}</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    </section>
+  )
+}
+
+export default TestResults
