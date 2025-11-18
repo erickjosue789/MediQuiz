@@ -154,6 +154,16 @@ function QuizPage() {
             <h2 className="text-xl font-medium text-white">{question.question}</h2>
           </header>
 
+          {question.image && (
+            <div className="overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-900/50">
+              <img
+                src={question.image}
+                alt={question.imageAlt || 'Ilustración del caso clínico'}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          )}
+
           <div className="grid gap-3">
             {question.options.map((option) => {
               const isSelected = option === selectedOption

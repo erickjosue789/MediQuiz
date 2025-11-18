@@ -102,6 +102,15 @@ function TestResults() {
                     </span>
                   </div>
                   <h3 className="text-base font-medium text-white">{question.question}</h3>
+                  {question.image && (
+                    <div className="overflow-hidden rounded-xl border border-slate-800/70 bg-slate-900/60">
+                      <img
+                        src={question.image}
+                        alt={question.imageAlt || 'Ilustración del caso clínico'}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  )}
                   <div className="grid gap-2 text-sm text-slate-300">
                     <p>
                       <span className="font-semibold text-slate-100">Tu respuesta: </span>

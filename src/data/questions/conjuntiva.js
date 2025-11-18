@@ -1390,5 +1390,705 @@ export default [
     ],
     answer: "Síntomas referidos desproporcionados respecto a los signos",
     explanation: "El texto destaca que los síntomas pueden parecer desproporcionados con respecto a los signos clínicos."
+  },
+  {
+    id: "conj-117",
+    question: "Paciente con hiperemia difusa más intensa lejos del limbo; ¿qué muestra la imagen?",
+    image: "/images/modulo-conjuntiva/fig-6-2a-hiperemia.png",
+    imageAlt: "Conjuntiva con hiperemia difusa más intensa hacia los fondos de saco, típica de congestión conjuntival (Fig. 6.2A, página 169 del PDF Lección 2)",
+    options: [
+      "Congestión ciliar por iridociclitis",
+      "Conjuntivitis bacteriana con hiperemia difusa",
+      "Isquemia conjuntival severa",
+      "Degeneración pingüecular"
+    ],
+    answer: "Conjuntivitis bacteriana con hiperemia difusa",
+    explanation: "La hiperemia de color rojo oscuro, más intensa lejos del limbo, es típica de congestión conjuntival en infecciones bacterianas agudas."
+  },
+  {
+    id: "conj-118",
+    question: "En la imagen se aprecia una mancha roja bien delimitada en la conjuntiva bulbar; ¿de qué hallazgo se trata?",
+    image: "/images/modulo-conjuntiva/fig-6-2b-hemorragia.png",
+    imageAlt: "Hemorragia subconjuntival localizada de color rojo intenso bajo la conjuntiva bulbar (Fig. 6.2B, página 169 del PDF Lección 2)",
+    options: [
+      "Hemorragia subconjuntival",
+      "Pterigión nasal",
+      "Queratitis estromal intersticial",
+      "Melanoma conjuntival difuso"
+    ],
+    answer: "Hemorragia subconjuntival",
+    explanation: "La colección de sangre bien delimitada bajo la conjuntiva bulbar corresponde a una hemorragia subconjuntival."
+  },
+  {
+    id: "conj-119",
+    question: "La imagen muestra una conjuntiva elevada, translúcida, que protruye entre los párpados; ¿qué signo es?",
+    image: "/images/modulo-conjuntiva/fig-6-2c-quemosis.png",
+    imageAlt: "Conjuntiva edematosa y abombada, de aspecto gelatinoso y translúcido que sobresale entre los párpados (Fig. 6.2C, página 169 del PDF Lección 2)",
+    options: [
+      "Quemosis conjuntival",
+      "Pterigión temporal",
+      "Pinguécula nasal",
+      "Degeneración esclerocorneal"
+    ],
+    answer: "Quemosis conjuntival",
+    explanation: "La quemosis es un edema conjuntival que se manifiesta como tumefacción translúcida que puede protruir entre los párpados."
+  },
+  {
+    id: "conj-120",
+    question: "En la fotografía se ve una placa blanquecina adherida a la conjuntiva tarsal, que al retirarla deja el epitelio intacto; ¿qué estructura se observa?",
+    image: "/images/modulo-conjuntiva/fig-6-2d-seudomembrana.png",
+    imageAlt: "Placa blanquecina sobre la conjuntiva tarsal inflamada, compatible con seudomembrana conjuntival (Fig. 6.2D, página 169 del PDF Lección 2)",
+    options: [
+      "Seudomembrana conjuntival",
+      "Membrana verdadera",
+      "Quiste epitelial",
+      "Pinguécula inflamada"
+    ],
+    answer: "Seudomembrana conjuntival",
+    explanation: "Las seudomembranas son exudados coagulados adheridos al epitelio inflamado que pueden retirarse sin arrancar el epitelio subyacente."
+  },
+  {
+    id: "conj-121",
+    question: "En esta imagen se aprecia pérdida de detalle vascular en la conjuntiva tarsal superior; ¿qué indica este hallazgo?",
+    image: "/images/modulo-conjuntiva/fig-6-2e-infiltracion.png",
+    imageAlt: "Conjuntiva tarsal con vasos poco definidos y aspecto engrosado, típico de infiltración inflamatoria crónica (Fig. 6.2E, página 169 del PDF Lección 2)",
+    options: [
+      "Infiltración conjuntival crónica",
+      "Hemorragia subconjuntival",
+      "Úlcera corneal perforante",
+      "Isquemia límbica"
+    ],
+    answer: "Infiltración conjuntival crónica",
+    explanation: "La infiltración se reconoce por la pérdida de detalle de los vasos normales de la conjuntiva tarsal, sobre todo en el párpado superior."
+  },
+  {
+    id: "conj-122",
+    question: "La imagen muestra bandas blanquecinas subconjuntivales en el tarso superior; ¿a qué proceso corresponden?",
+    image: "/images/modulo-conjuntiva/fig-6-2f-cicatrizacion.png",
+    imageAlt: "Bandas fibrosas blanquecinas en la conjuntiva tarsal superior, compatibles con cicatrización subconjuntival severa (Fig. 6.2F, página 169 del PDF Lección 2)",
+    options: [
+      "Cicatrización subconjuntival grave",
+      "Pterigión avanzado",
+      "Degeneración esclerocorneal",
+      "Conjuntivitis alérgica leve"
+    ],
+    answer: "Cicatrización subconjuntival grave",
+    explanation: "La cicatrización subconjuntival grave se observa como bandas fibrosas y puede asociarse a entropión cicatricial y pérdida de células caliciformes."
+  },
+  {
+    id: "conj-123",
+    question: "En el corte histológico de la imagen se aprecia epitelio no queratinizado con varias capas celulares y células caliciformes; ¿qué tejido es?",
+    image: "/images/modulo-conjuntiva/fig-6-1-histologia.png",
+    imageAlt: "Corte histológico con epitelio no queratinizado de varias capas y células caliciformes dispersas, correspondiente a la conjuntiva (Fig. 6.1, página 168 del PDF Lección 2)",
+    options: [
+      "Conjuntiva",
+      "Córnea central",
+      "Esclerótica",
+      "Retina neurosensorial"
+    ],
+    answer: "Conjuntiva",
+    explanation: "La conjuntiva presenta epitelio no queratinizado de unas cinco capas, con células caliciformes productoras de moco."
+  },
+  {
+    id: "conj-124",
+    question: "La imagen clínica muestra múltiples elevaciones redondeadas, translúcidas, tipo granos de arroz en el fondo de saco; ¿qué son?",
+    image: "/images/modulo-conjuntiva/fig-6-3a-foliculos.png",
+    imageAlt: "Conjuntiva con múltiples pequeñas elevaciones redondeadas y translúcidas en fondos de saco, típicas de folículos conjuntivales (Fig. 6.3A, página 170 del PDF Lección 2)",
+    options: [
+      "Folículos conjuntivales",
+      "Papilas gigantes",
+      "Quistes epidérmicos",
+      "Concreciones calcificadas"
+    ],
+    answer: "Folículos conjuntivales",
+    explanation: "Los folículos se ven como lesiones redondeadas, bien delimitadas, translúcidas, semejantes a granos de arroz, sobre todo en fondos de saco."
+  },
+  {
+    id: "conj-125",
+    question: "En el corte histológico se aprecian centros germinales subepiteliales con linfocitos inmaduros y maduros en la periferia; ¿qué estructura se observa?",
+    image: "/images/modulo-conjuntiva/fig-6-3b-foliculo-histo.png",
+    imageAlt: "Imagen histológica con dos centros germinales linfoides subepiteliales, característicos de folículos conjuntivales (Fig. 6.3B, página 170 del PDF Lección 2)",
+    options: [
+      "Folículo conjuntival",
+      "Papila conjuntival",
+      "Nódulo melanocítico",
+      "Granuloma sarcoideo"
+    ],
+    answer: "Folículo conjuntival",
+    explanation: "Histológicamente, el folículo tiene un centro germinal linfoide subepitelial con linfocitos inmaduros centrales y células maduras periféricas."
+  },
+  {
+    id: "conj-126",
+    question: "La fotografía muestra engrosamientos poligonales elevados con un vaso central visible en la conjuntiva tarsal; ¿qué son?",
+    image: "/images/modulo-conjuntiva/fig-6-3c-macropapilas.png",
+    imageAlt: "Tarso superior con estructuras poligonales rojizas elevadas, con un vaso central, típicas de macropapilas conjuntivales (Fig. 6.3C, página 170 del PDF Lección 2)",
+    options: [
+      "Macropapilas conjuntivales",
+      "Folículos linfoides",
+      "Quistes de retención",
+      "Pinguéculas múltiples"
+    ],
+    answer: "Macropapilas conjuntivales",
+    explanation: "Las macropapilas son lesiones papilares menores de 1 mm que muestran un núcleo vascular central y superficie en patrón de adoquinado."
+  },
+  {
+    id: "conj-127",
+    question: "En el corte histológico se observan pliegues de epitelio hiperplásico con núcleo fibrovascular; ¿qué tipo de lesión corresponde?",
+    image: "/images/modulo-conjuntiva/fig-6-3d-papila-histo.png",
+    imageAlt: "Corte histológico con pliegues de epitelio conjuntival hiperplásico alrededor de un núcleo fibrovascular, característico de papila conjuntival (Fig. 6.3D, página 170 del PDF Lección 2)",
+    options: [
+      "Papila conjuntival",
+      "Folículo conjuntival",
+      "Granuloma tuberculoso",
+      "Quiste de inclusión epitelial"
+    ],
+    answer: "Papila conjuntival",
+    explanation: "La papila conjuntival presenta pliegues epiteliales con un núcleo fibrovascular e infiltrado inflamatorio subepitelial."
+  },
+  {
+    id: "conj-128",
+    question: "En la imagen de un paciente con conjuntivitis bacteriana grave se ve edema y eritema palpebral llamativos; ¿qué complicación local sugiere?",
+    image: "/images/modulo-conjuntiva/fig-6-4a-edema-palpebral.png",
+    imageAlt: "Párpados tumefactos y eritematosos acompañando una conjuntivitis bacteriana grave (Fig. 6.4A, página 171 del PDF Lección 2)",
+    options: [
+      "Infección bacteriana grave, especialmente gonocócica",
+      "Simple ojo seco leve",
+      "Degeneración esclerocorneal",
+      "Retinopatía diabética"
+    ],
+    answer: "Infección bacteriana grave, especialmente gonocócica",
+    explanation: "El edema y eritema palpebral marcados son característicos de infecciones bacterianas graves, sobre todo gonocócicas."
+  },
+  {
+    id: "conj-129",
+    question: "En la fotografía se observa hiperemia tarsal y del fondo de saco en un cuadro agudo; ¿qué diagnóstico es más probable?",
+    image: "/images/modulo-conjuntiva/fig-6-4b-edema-palpebral.png",
+    imageAlt: "Conjuntiva tarsal y fondo de saco intensamente enrojecidos en una conjuntivitis bacteriana aguda (Fig. 6.4B, página 171 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis bacteriana aguda",
+      "Uveítis anterior",
+      "Glaucoma de ángulo cerrado",
+      "Neuropatía óptica isquémica"
+    ],
+    answer: "Conjuntivitis bacteriana aguda",
+    explanation: "La congestión conjuntival difusa tarsal y de fondos de saco es típica de conjuntivitis bacteriana aguda."
+  },
+  {
+    id: "conj-130",
+    question: "La imagen muestra abundante secreción amarillenta adherida a pestañas y borde palpebral; ¿qué tipo de secreción es?",
+    image: "/images/modulo-conjuntiva/fig-6-4c-mucopurulenta.png",
+    imageAlt: "Exudado espeso amarillento pegado a pestañas y margen palpebral en una conjuntivitis bacteriana (Fig. 6.4C, página 171 del PDF Lección 2)",
+    options: [
+      "Secreción mucopurulenta",
+      "Secreción acuosa pura",
+      "Secreción hemática",
+      "Lágrima lipídica espesa"
+    ],
+    answer: "Secreción mucopurulenta",
+    explanation: "La secreción mucopurulenta es característica de la infección bacteriana aguda o por clamidias."
+  },
+  {
+    id: "conj-131",
+    question: "En la fotografía se aprecia secreción purulenta muy abundante que llena el fondo de saco; ¿qué etiología debe sospecharse?",
+    image: "/images/modulo-conjuntiva/fig-6-4d-hiperpurulenta.png",
+    imageAlt: "Ojo con gran cantidad de pus amarillo espeso desbordando del fondo de saco, típico de conjuntivitis gonocócica (Fig. 6.4D, página 171 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis gonocócica o meningocócica",
+      "Conjuntivitis alérgica estacional",
+      "Ojo seco severo",
+      "Hemorragia subconjuntival traumática"
+    ],
+    answer: "Conjuntivitis gonocócica o meningocócica",
+    explanation: "La secreción purulenta hiperaguda es muy sugestiva de conjuntivitis por Neisseria gonorrhoeae o N. meningitidis."
+  },
+  {
+    id: "conj-132",
+    question: "La imagen esquemática clasifica diversos serotipos de Chlamydia trachomatis; ¿cuál se asocia principalmente a tracoma endémico?",
+    image: "/images/modulo-conjuntiva/fig-6-5-chlamydia-clasificacion.png",
+    imageAlt: "Cuadro esquemático de la clasificación de Chlamydia trachomatis por serotipos y enfermedades asociadas (Fig. 6.5, página 173 del PDF Lección 2)",
+    options: [
+      "Serotipos A, B, Ba y C",
+      "Serotipos D-K",
+      "Serotipos L1-L3 únicamente",
+      "Serotipo Z exclusivo"
+    ],
+    answer: "Serotipos A, B, Ba y C",
+    explanation: "El tracoma endémico se asocia principalmente a los serotipos A, B, Ba y C de Chlamydia trachomatis."
+  },
+  {
+    id: "conj-133",
+    question: "En la imagen se observan folículos grandes y blanquecinos en el fondo de saco inferior; ¿qué entidad sugieren?",
+    image: "/images/modulo-conjuntiva/fig-6-6a-foliculos-inferiores.png",
+    imageAlt: "Grandes folículos blanquecinos en el fondo de saco inferior en un adulto con conjuntivitis crónica (Fig. 6.6A, página 174 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis por Chlamydia del adulto",
+      "Conjuntivitis alérgica aguda",
+      "Queratitis herpética",
+      "Pterigión nasal inflamado"
+    ],
+    answer: "Conjuntivitis por Chlamydia del adulto",
+    explanation: "Los grandes folículos, especialmente en el fondo de saco inferior, son típicos de conjuntivitis por Chlamydia en el adulto."
+  },
+  {
+    id: "conj-134",
+    question: "La fotografía muestra folículos prominentes en la conjuntiva tarsal superior; ¿qué diagnóstico es más probable?",
+    image: "/images/modulo-conjuntiva/fig-6-6b-foliculos-superiores.png",
+    imageAlt: "Folículos grandes distribuidos en la conjuntiva tarsal superior en un cuadro crónico (Fig. 6.6B, página 173 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis por Chlamydia del adulto",
+      "Conjuntivitis química leve",
+      "Queratoconjuntivitis vernal pura",
+      "Pingüécula nasal"
+    ],
+    answer: "Conjuntivitis por Chlamydia del adulto",
+    explanation: "Los folículos pueden afectar también a la conjuntiva tarsal superior en la conjuntivitis por Chlamydia."
+  },
+  {
+    id: "conj-135",
+    question: "En la imagen se observan infiltrados corneales periféricos subepiteliales en un paciente con conjuntivitis crónica; ¿qué asociación es típica?",
+    image: "/images/modulo-conjuntiva/fig-6-6c-infiltrados-perifericos.png",
+    imageAlt: "Infiltrados blanquecinos periféricos en la córnea en un contexto de conjuntivitis crónica por Chlamydia (Fig. 6.6C, página 173 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis por Chlamydia crónica",
+      "Degeneración marginal de Terrien",
+      "Úlcera corneal herpética geográfica",
+      "Escleritis necrosante"
+    ],
+    answer: "Conjuntivitis por Chlamydia crónica",
+    explanation: "Los infiltrados corneales periféricos subepiteliales son frecuentes en conjuntivitis por Chlamydia de evolución prolongada."
+  },
+  {
+    id: "conj-136",
+    question: "La imagen corneal muestra un pannus superior con neovasos que invaden desde el limbo; ¿qué causa se menciona en el texto?",
+    image: "/images/modulo-conjuntiva/fig-6-6d-pannus-superior.png",
+    imageAlt: "Pannus corneal superior con invasión vascular desde el limbo en un caso crónico de Chlamydia (Fig. 6.6D, página 173 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis por Chlamydia crónica",
+      "Queratocono avanzado",
+      "Degeneración marginal pelúcida",
+      "Edema corneal agudo"
+    ],
+    answer: "Conjuntivitis por Chlamydia crónica",
+    explanation: "En los casos crónicos de conjuntivitis por Chlamydia puede aparecer un pannus corneal superior."
+  },
+  {
+    id: "conj-137",
+    question: "La fotografía muestra conjuntivitis folicular/papilar mixta con secreción mucopurulenta en un niño; ¿qué forma de enfermedad representa?",
+    image: "/images/modulo-conjuntiva/fig-6-7a-tracoma-activo.png",
+    imageAlt: "Tarso superior con folículos y papilas asociados a secreción mucopurulenta en niño con tracoma activo (Fig. 6.7A, página 175 del PDF Lección 2)",
+    options: [
+      "Tracoma activo en fase inflamatoria",
+      "Conjuntivitis alérgica estacional leve",
+      "Blefaritis seborreica",
+      "Conjuntivitis química aislada"
+    ],
+    answer: "Tracoma activo en fase inflamatoria",
+    explanation: "El tracoma activo en niños se caracteriza por conjuntivitis mixta folicular/papilar y secreción mucopurulenta."
+  },
+  {
+    id: "conj-138",
+    question: "La imagen corneal muestra un pannus superior prominente en un contexto de tracoma; ¿qué estructura se está afectando principalmente?",
+    image: "/images/modulo-conjuntiva/fig-6-7b-pannus-tracoma.png",
+    imageAlt: "Córnea con pannus superior prominente en paciente con tracoma (Fig. 6.7B, página 175 del PDF Lección 2)",
+    options: [
+      "Córnea superior por pannus tracomatosa",
+      "Mácula lútea",
+      "Nervio óptico",
+      "Cristalino posterior"
+    ],
+    answer: "Córnea superior por pannus tracomatosa",
+    explanation: "El tracoma activo puede producir queratitis epitelial superior y formación de pannus en la córnea superior."
+  },
+  {
+    id: "conj-139",
+    question: "En la fotografía se aprecian cicatrices conjuntivales lineales o estrelladas en el tarso; ¿a qué fase del tracoma corresponden?",
+    image: "/images/modulo-conjuntiva/fig-6-7c-cicatrices-estrelladas.png",
+    imageAlt: "Conjuntiva tarsal con cicatrices estrelladas blancas en tracoma cicatricial leve (Fig. 6.7C, página 175 del PDF Lección 2)",
+    options: [
+      "Tracoma cicatricial",
+      "Tracoma activo exclusivamente",
+      "Conjuntivitis alérgica aguda",
+      "Queratitis viral primaria"
+    ],
+    answer: "Tracoma cicatricial",
+    explanation: "Las cicatrices lineales o estrelladas en la conjuntiva tarsal son típicas del tracoma en fase cicatricial."
+  },
+  {
+    id: "conj-140",
+    question: "La imagen muestra una banda fibrosa horizontal en el tarso superior conocida como línea de Arlt; ¿qué indica este hallazgo?",
+    image: "/images/modulo-conjuntiva/fig-6-7d-linea-arlt.png",
+    imageAlt: "Tarso superior con gruesa banda cicatricial blanca conocida como línea de Arlt en tracoma (Fig. 6.7D, página 175 del PDF Lección 2)",
+    options: [
+      "Cicatrización tracomatosa avanzada",
+      "Pterigión nasal",
+      "Escleritis nodular",
+      "Melanosis conjuntival benigna"
+    ],
+    answer: "Cicatrización tracomatosa avanzada",
+    explanation: "La línea de Arlt es una gran cicatriz conjuntival confluente típica de tracoma grave."
+  },
+  {
+    id: "conj-141",
+    question: "En el limbo superior se observan pequeñas depresiones residuales donde antes había folículos; ¿cómo se llaman estas lesiones?",
+    image: "/images/modulo-conjuntiva/fig-6-7e-fosetas-herbert.png",
+    imageAlt: "Hilera de pequeñas depresiones suaves en el limbo superior, denominadas fosetas de Herbert (Fig. 6.7E, página 175 del PDF Lección 2)",
+    options: [
+      "Fosetas de Herbert",
+      "Puntos de Horner-Trantas",
+      "Quistes límbicos",
+      "Concreciones calizas"
+    ],
+    answer: "Fosetas de Herbert",
+    explanation: "Los folículos límbicos que remiten pueden dejar una hilera de depresiones llamadas fosetas de Herbert."
+  },
+  {
+    id: "conj-142",
+    question: "La fotografía muestra entropión cicatricial con pestañas tocando la córnea en un ojo con larga historia de tracoma; ¿qué complicación se observa?",
+    image: "/images/modulo-conjuntiva/fig-6-7f-entropion.png",
+    imageAlt: "Entropión cicatricial con pestañas en contacto con la córnea y opacificación corneal en tracoma (Fig. 6.7F, página 175 del PDF Lección 2)",
+    options: [
+      "Triquiasis tracomatosa con entropión cicatricial",
+      "Ectropión senil",
+      "Blefaroptosis congénita",
+      "Retracción palpebral tiroidea"
+    ],
+    answer: "Triquiasis tracomatosa con entropión cicatricial",
+    explanation: "La cicatrización grave en tracoma puede causar entropión cicatricial y triquiasis con daño corneal."
+  },
+  {
+    id: "conj-143",
+    question: "En un recién nacido se observa edema palpebral importante y secreción purulenta abundante; ¿qué muestra la imagen?",
+    image: "/images/modulo-conjuntiva/fig-6-8-conjuntivitis-neonatal.png",
+    imageAlt: "Recién nacido con párpados edematosos y secreción purulenta franca en conjuntivitis neonatal (Fig. 6.8, página 176 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis neonatal bacteriana",
+      "Glaucoma congénito",
+      "Obstrucción lagrimal aislada sin infección",
+      "Retinoblastoma bilateral"
+    ],
+    answer: "Conjuntivitis neonatal bacteriana",
+    explanation: "El edema palpebral junto a secreción purulenta es típico de conjuntivitis neonatal bacteriana, con especial riesgo en infecciones gonocócicas."
+  },
+  {
+    id: "conj-144",
+    question: "En la fotografía se observa conjuntiva hiperémica con folículos marcados y adenopatía preauricular dolorosa; ¿qué tipo de conjuntivitis vírica es más probable?",
+    image: "/images/modulo-conjuntiva/fig-6-9a-conj-folicular-viral.png",
+    imageAlt: "Conjuntiva con folículos prominentes y enrojecimiento difuso en una queratoconjuntivitis por adenovirus (Fig. 6.9A, página 179 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis folicular aguda inespecífica por adenovirus",
+      "Conjuntivitis alérgica estacional",
+      "Conjuntivitis bacteriana pura",
+      "Conjuntivitis química"
+    ],
+    answer: "Conjuntivitis folicular aguda inespecífica por adenovirus",
+    explanation: "La conjuntivitis folicular aguda inespecífica por adenovirus muestra folículos, hiperemia y suele acompañarse de adenopatía preauricular."
+  },
+  {
+    id: "conj-145",
+    question: "En esta imagen hay una placa blanquecina sobre la conjuntiva tarsal que al desprenderse puede dejar cicatriz; ¿a qué se refiere?",
+    image: "/images/modulo-conjuntiva/fig-6-9b-pseudomembrana-viral.png",
+    imageAlt: "Seudomembrana sobre conjuntiva tarsal en queratoconjuntivitis adenovírica intensa (Fig. 6.9B, página 179 del PDF Lección 2)",
+    options: [
+      "Seudomembrana en queratoconjuntivitis adenovírica",
+      "Quiste de retención conjuntival",
+      "Tumor limbar benigno",
+      "Hemorragia subconjuntival"
+    ],
+    answer: "Seudomembrana en queratoconjuntivitis adenovírica",
+    explanation: "En las formas graves de infección por adenovirus pueden formarse membranas o seudomembranas conjuntivales."
+  },
+  {
+    id: "conj-146",
+    question: "La imagen muestra cicatrización conjuntival tras un episodio de queratoconjuntivitis adenovírica con membranas; ¿qué complicación refleja?",
+    image: "/images/modulo-conjuntiva/fig-6-9c-cicatriz-adenovirus.png",
+    imageAlt: "Conjuntiva tarsal con áreas cicatriciales residuales tras conjuntivitis adenovírica con membranas (Fig. 6.9C, página 179 del PDF Lección 2)",
+    options: [
+      "Cicatrización residual posadenovírica",
+      "Síndrome de Sjögren primario",
+      "Pterigión nasal",
+      "Concreciones conjuntivales benignas"
+    ],
+    answer: "Cicatrización residual posadenovírica",
+    explanation: "Las membranas y seudomembranas por adenovirus pueden dejar áreas de cicatrización conjuntival permanente."
+  },
+  {
+    id: "conj-147",
+    question: "En la imagen se observan múltiples infiltrados corneales subepiteliales blanquecinos tras infección por adenovirus; ¿qué representan?",
+    image: "/images/modulo-conjuntiva/fig-6-9d-infiltrados-subepiteliales.png",
+    imageAlt: "Infiltrados corneales subepiteliales blancos múltiples en queratoconjuntivitis adenovírica (Fig. 6.9D, página 179 del PDF Lección 2)",
+    options: [
+      "Reacción inmunitaria subepitelial frente al adenovirus",
+      "Depósitos de cobre corneales",
+      "Neovascularización profunda",
+      "Úlceras corneales perforantes"
+    ],
+    answer: "Reacción inmunitaria subepitelial frente al adenovirus",
+    explanation: "Los infiltrados subepiteliales se consideran expresión de una reacción inmunitaria frente al virus y pueden persistir meses."
+  },
+  {
+    id: "conj-148",
+    question: "La fotografía muestra un nódulo pálido, céreo y umbilicado en el borde palpebral; ¿qué lesión es?",
+    image: "/images/modulo-conjuntiva/fig-6-10a-molusco-palpebral.png",
+    imageAlt: "Pequeño nódulo umbilicado, pálido y céreo en el borde palpebral, típico de molusco contagioso (Fig. 6.10A, página 179 del PDF Lección 2)",
+    options: [
+      "Lesión de molusco contagioso",
+      "Chalazión",
+      "Carcinoma basocelular",
+      "Xantelasma"
+    ],
+    answer: "Lesión de molusco contagioso",
+    explanation: "El molusco contagioso se presenta como un nódulo pálido, céreo y umbilicado en el borde palpebral."
+  },
+  {
+    id: "conj-149",
+    question: "En la imagen se observa una conjuntivitis folicular crónica asociada a una lesión palpebral; ¿cuál es la causa más probable?",
+    image: "/images/modulo-conjuntiva/fig-6-10b-conjuntivitis-molusco.png",
+    imageAlt: "Conjuntivitis folicular crónica en un ojo con lesión de molusco contagioso en el borde palpebral (Fig. 6.10B, página 179 del PDF Lección 2)",
+    options: [
+      "Diseminación de partículas víricas desde un molusco contagioso",
+      "Reacción a cuerpo extraño corneal",
+      "Queratitis bacteriana profunda",
+      "Degeneración marginal perilímbica"
+    ],
+    answer: "Diseminación de partículas víricas desde un molusco contagioso",
+    explanation: "El molusco contagioso puede causar conjuntivitis folicular crónica por diseminación de partículas víricas a la superficie ocular."
+  },
+  {
+    id: "conj-150",
+    question: "La fotografía muestra quemosis moderada en un niño con picor ocular agudo tras exposición a polen; ¿qué tipo de conjuntivitis alérgica es?",
+    image: "/images/modulo-conjuntiva/fig-6-11a-quemosis-moderada.png",
+    imageAlt: "Conjuntiva edematosa con quemosis moderada en un cuadro de conjuntivitis alérgica aguda (Fig. 6.11A, página 180 del PDF Lección 2)",
+    options: [
+      "Conjuntivitis alérgica aguda",
+      "Conjuntivitis bacteriana hiperaguda",
+      "Tracoma cicatricial",
+      "Conjuntivitis por Chlamydia"
+    ],
+    answer: "Conjuntivitis alérgica aguda",
+    explanation: "La conjuntivitis alérgica aguda presenta quemosis llamativa tras exposición a alérgenos ambientales, como pólenes."
+  },
+  {
+    id: "conj-151",
+    question: "En esta imagen se aprecia quemosis intensa que protruye entre los párpados en un episodio alérgico agudo; ¿cuál es la conducta habitual?",
+    image: "/images/modulo-conjuntiva/fig-6-11b-quemosis-intensa.png",
+    imageAlt: "Quemosis conjuntival intensa que sobresale entre los párpados en conjuntivitis alérgica aguda (Fig. 6.11B, página 180 del PDF Lección 2)",
+    options: [
+      "Suele resolverse en pocas horas con medidas sintomáticas",
+      "Requiere siempre cirugía urgente",
+      "Es indicativa de infección gonocócica",
+      "Obliga a tratamiento prolongado con antibióticos sistémicos"
+    ],
+    answer: "Suele resolverse en pocas horas con medidas sintomáticas",
+    explanation: "En la conjuntivitis alérgica aguda, la quemosis suele remitir en pocas horas cuando disminuye la hiperpermeabilidad vascular."
+  },
+  {
+    id: "conj-152",
+    question: "La imagen tarsal muestra hipertrofia papilar aterciopelada en el tarso superior de un niño; ¿qué diagnóstico orienta?",
+    image: "/images/modulo-conjuntiva/fig-6-12a-qcv-hipertrofia-papilar.png",
+    imageAlt: "Tarso superior con papilas difusas de aspecto aterciopelado en queratoconjuntivitis vernal palpebral inicial (Fig. 6.12A, página 181 del PDF Lección 2)",
+    options: [
+      "Queratoconjuntivitis vernal palpebral",
+      "Conjuntivitis bacteriana aguda",
+      "Conjuntivitis vírica leve",
+      "Tracoma activo agudo"
+    ],
+    answer: "Queratoconjuntivitis vernal palpebral",
+    explanation: "La QCV palpebral presenta hipertrofia papilar aterciopelada en el tarso superior, especialmente en niños varones."
+  },
+  {
+    id: "conj-153",
+    question: "En esta fotografía se observan macropapilas con infiltrados blanquecinos focales en su superficie; ¿qué forma de QCV sugiere?",
+    image: "/images/modulo-conjuntiva/fig-6-12b-macropapilas-inflamadas.png",
+    imageAlt: "Macropapilas tarsales con focos blanquecinos inflamatorios en queratoconjuntivitis vernal (Fig. 6.12B, página 181 del PDF Lección 2)",
+    options: [
+      "QCV palpebral activa con inflamación intensa",
+      "Conjuntivitis alérgica perenne leve",
+      "Conjuntivitis bacteriana cicatricial",
+      "Queratitis herpética dendrítica"
+    ],
+    answer: "QCV palpebral activa con inflamación intensa",
+    explanation: "Las macropapilas con infiltrados blanquecinos indican inflamación intensa en la forma palpebral de QCV."
+  },
+  {
+    id: "conj-154",
+    question: "La imagen muestra papilas gigantes mayores de 1 mm en el tarso superior; ¿a qué entidad típica se asocian?",
+    image: "/images/modulo-conjuntiva/fig-6-12c-papilas-gigantes.png",
+    imageAlt: "Grandes papilas aplanadas mayores de 1 mm en el tarso superior, compatibles con papilas gigantes vernal (Fig. 6.12C, página 181 del PDF Lección 2)",
+    options: [
+      "Queratoconjuntivitis vernal palpebral",
+      "Conjuntivitis viral aguda",
+      "Tracoma cicatricial",
+      "Blefaritis seborreica aislada"
+    ],
+    answer: "Queratoconjuntivitis vernal palpebral",
+    explanation: "La QCV puede evolucionar a papilas gigantes por confluencia de lesiones papilares más pequeñas."
+  },
+  {
+    id: "conj-155",
+    question: "La fotografía tarsal muestra papilas gigantes con hendiduras entre ellas rellenas de moco; ¿qué hallazgo describe mejor la imagen?",
+    image: "/images/modulo-conjuntiva/fig-6-12d-moco-papilas.png",
+    imageAlt: "Papilas gigantes tarsales con depósitos de moco entre ellas en QCV palpebral (Fig. 6.12D, página 181 del PDF Lección 2)",
+    options: [
+      "Depósito de moco entre papilas gigantes en QCV",
+      "Placas calcificadas corneales",
+      "Nevos conjuntivales múltiples",
+      "Hemorragias subconjuntivales extensas"
+    ],
+    answer: "Depósito de moco entre papilas gigantes en QCV",
+    explanation: "En QCV palpebral se puede observar acumulación de moco entre las papilas gigantes del tarso superior."
+  },
+  {
+    id: "conj-156",
+    question: "En el limbo se observan papilas gelatinosas prominentes; ¿qué forma de QCV representa?",
+    image: "/images/modulo-conjuntiva/fig-6-13a-papilas-limbicas.png",
+    imageAlt: "Papilas gelatinosas límbicas prominentes en un paciente con queratoconjuntivitis vernal límbica (Fig. 6.13A, página 181-182 del PDF Lección 2)",
+    options: [
+      "Queratoconjuntivitis vernal límbica",
+      "Tracoma cicatricial",
+      "Conjuntivitis alérgica estacional pura",
+      "Degeneración esferoidea"
+    ],
+    answer: "Queratoconjuntivitis vernal límbica",
+    explanation: "La forma límbica de QCV se caracteriza por papilas gelatinosas en el limbo, a menudo con puntos de Horner-Trantas."
+  },
+  {
+    id: "conj-157",
+    question: "La imagen corneal-límbica muestra pequeños puntos blanquecinos en la parte superior de las papilas límbicas; ¿cómo se denominan?",
+    image: "/images/modulo-conjuntiva/fig-6-13b-horner-trantas.png",
+    imageAlt: "Papilas gelatinosas límbicas con pequeños puntos blanquecinos en su superficie, llamados puntos de Horner-Trantas (Fig. 6.13B, página 181-182 del PDF Lección 2)",
+    options: [
+      "Puntos de Horner-Trantas",
+      "Fosetas de Herbert",
+      "Quistes límbicos calcificados",
+      "Nódulos de Salzmann"
+    ],
+    answer: "Puntos de Horner-Trantas",
+    explanation: "Los puntos de Horner-Trantas son acumulaciones de leucocitos en la parte superior de las papilas límbicas en QCV."
+  },
+  {
+    id: "conj-158",
+    question: "En un paciente con QCV de zona tropical, la imagen muestra afectación límbica muy intensa; ¿qué manifestación es típica?",
+    image: "/images/modulo-conjuntiva/fig-6-13d-qcv-tropical.png",
+    imageAlt: "Limbus con edema gelatinoso extenso y puntos blancos en QCV límbica intensa en regiones tropicales (Fig. 6.13D, página 181-182 del PDF Lección 2)",
+    options: [
+      "Afectación límbica extensa con papilas prominentes",
+      "Atrofia límbica sin inflamación",
+      "Solo hemorragias subconjuntivales",
+      "Degeneración en banda calcificada"
+    ],
+    answer: "Afectación límbica extensa con papilas prominentes",
+    explanation: "En regiones tropicales, la QCV límbica puede ser muy intensa, con papilas gelatinosas extensas en el limbo."
+  },
+  {
+    id: "conj-159",
+    question: "La imagen corneal superior muestra erosiones epiteliales puntiformes asociadas a capas de moco; ¿qué entidad sugiere?",
+    image: "/images/modulo-conjuntiva/fig-6-14a-erosiones-puntiformes.png",
+    imageAlt: "Córnea superior con tinción puntiforme y moco adherido en paciente con QCV (Fig. 6.14A, página 182 del PDF Lección 2)",
+    options: [
+      "Queratopatía superficial por QCV",
+      "Úlcera corneal bacteriana central",
+      "Queratopatía en banda calcificada",
+      "Erosión recurrente traumática aislada"
+    ],
+    answer: "Queratopatía superficial por QCV",
+    explanation: "Las erosiones epiteliales puntiformes con capas de moco en la córnea superior son típicas de QCV."
+  },
+  {
+    id: "conj-160",
+    question: "En la fotografía se observa una úlcera corneal en escudo con depósitos blanquecinos adheridos; ¿qué complicación describe?",
+    image: "/images/modulo-conjuntiva/fig-6-14b-ulcera-escudo.png",
+    imageAlt: "Úlcera corneal superficial amplia con base blanquecina, típica úlcera en escudo de QCV (Fig. 6.14B, página 182 del PDF Lección 2)",
+    options: [
+      "Úlcera en escudo por QCV",
+      "Úlcera herpética dendrítica",
+      "Úlcera por exposición lagrimal",
+      "Úlcera neurotrófica diabética"
+    ],
+    answer: "Úlcera en escudo por QCV",
+    explanation: "La úlcera en escudo se forma cuando la membrana de Bowman expuesta se recubre de moco y fosfato cálcico, retrasando la reepitelización."
+  },
+  {
+    id: "conj-161",
+    question: "La imagen muestra placa corneal superior que no se humedece bien y retrasa la cicatrización; ¿qué hallazgo es compatible?",
+    image: "/images/modulo-conjuntiva/fig-6-14c-placa-escudo.png",
+    imageAlt: "Placa corneal superior con superficie opaca y poco humedecida en úlcera en escudo vernal (Fig. 6.14C, página 182 del PDF Lección 2)",
+    options: [
+      "Placa de úlcera en escudo",
+      "Degeneración grasa corneal",
+      "Cicatriz estromal profunda postherpética",
+      "Depósito de hierro en anillo de Fleischer"
+    ],
+    answer: "Placa de úlcera en escudo",
+    explanation: "La placa de moco y sales cálcicas sobre Bowman en QCV forma la úlcera en escudo, que cicatriza lentamente."
+  },
+  {
+    id: "conj-162",
+    question: "En un niño con QCV se observa aumento de la frecuencia de parpadeo y foto sensibilidad junto a las lesiones corneales; ¿qué síntoma principal explica la imagen?",
+    image: "/images/modulo-conjuntiva/fig-6-14-sintomas-qcv.png",
+    imageAlt: "Niño con QCV que presenta fotofobia y parpadeo frecuente junto con signos corneales (Fig. 6.14A-C, página 182 del PDF Lección 2)",
+    options: [
+      "Fotofobia y sensación de cuerpo extraño por queratopatía vernal",
+      "Amaurosis súbita por neuritis óptica",
+      "Diplopía por paresia de recto lateral",
+      "Metamorfopsias por patología macular"
+    ],
+    answer: "Fotofobia y sensación de cuerpo extraño por queratopatía vernal",
+    explanation: "La afectación corneal en QCV produce fotofobia, sensación de cuerpo extraño y escozor, responsables del parpadeo aumentado."
+  },
+  {
+    id: "conj-163",
+    question: "Según la imagen adjunta (A), ¿qué hallazgo clínico destaca en este caso de enfermedad atópica?",
+    image: "/images/modulo-conjuntiva/conj-6-15-A.png",
+    imageAlt: "Fig. 6.15 A, página 185. Afectación palpebral grave en enfermedad atópica: eritema, descamación y engrosamiento palpebral.",
+    options: [
+      "Afectación palpebral grave con inflamación crónica",
+      "Triquiasis cicatricial severa",
+      "Orzuelo externo agudo",
+      "Ptosis neurogénica"
+    ],
+    answer: "Afectación palpebral grave con inflamación crónica",
+    explanation: "La figura A muestra engrosamiento, eritema y cambios crónicos de dermatitis atópica del párpado."
+  },
+  {
+    id: "conj-164",
+    question: "¿Qué alteración se observa en la imagen (B)?",
+    image: "/images/modulo-conjuntiva/conj-6-15-B.png",
+    imageAlt: "Fig. 6.15 B, página 185. Infiltración y cicatrización de la conjuntiva tarsal en enfermedad atópica.",
+    options: [
+      "Cicatrización e infiltración conjuntival tarsal",
+      "Folículos grandes translúcidos",
+      "Papilas gigantes típicas de vernal",
+      "Conjuntivitis vírica folicular"
+    ],
+    answer: "Cicatrización e infiltración conjuntival tarsal",
+    explanation: "La foto B muestra la superficie tarsal engrosada, infiltrada y cicatricial, típica de enfermedad atópica crónica."
+  },
+  {
+    id: "conj-165",
+    question: "La imagen C muestra un cambio anatómico importante en el fondo de saco. ¿Cuál es?",
+    image: "/images/modulo-conjuntiva/conj-6-15-C.png",
+    imageAlt: "Fig. 6.15 C, página 185. Contracción de los fondos de saco conjuntivales en enfermedad atópica.",
+    options: [
+      "Contracción del fondo de saco conjuntival",
+      "Hemorragia subconjuntival aguda",
+      "Granuloma piógeno",
+      "Rotación palpebral hacia fuera"
+    ],
+    answer: "Contracción del fondo de saco conjuntival",
+    explanation: "El fondo de saco aparece retraído, hallazgo típico por cicatrización crónica en la atopia."
+  },
+  {
+    id: "conj-166",
+    question: "En la imagen D se observa un cambio característico de la carúncula. ¿Cuál es?",
+    image: "/images/modulo-conjuntiva/conj-6-15-D.png",
+    imageAlt: "Fig. 6.15 D, página 185. Queratinización de la carúncula en enfermedad atópica.",
+    options: [
+      "Queratinización de la carúncula",
+      "Hipertrofia de papilas gigantes",
+      "Folículos en parches",
+      "Melanosis racial"
+    ],
+    answer: "Queratinización de la carúncula",
+    explanation: "La carúncula aparece blanquecina, engrosada y queratinizada, típica de atopia crónica."
   }
 ]

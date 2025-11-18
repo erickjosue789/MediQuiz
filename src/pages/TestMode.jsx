@@ -13,7 +13,7 @@ const buildQuestionPool = (selectedModules) =>
   selectedModules.flatMap((module) =>
     module.questions.map((question) => ({
       ...question,
-      options: [...question.options],
+      options: Array.isArray(question.options) ? [...question.options] : [],
       moduleId: module.id,
       moduleTitle: module.title,
       moduleDifficulty: module.difficulty
@@ -217,6 +217,16 @@ function TestMode() {
             <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Caso clínico</p>
             <h2 className="text-xl font-medium text-white">{question.question}</h2>
           </header>
+
+          {question.image && (
+            <div className="overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-900/50">
+              <img
+                src={question.image}
+                alt={question.imageAlt || 'Ilustración del caso clínico'}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          )}
 
           <div className="space-y-2">
             <label htmlFor="test-answer" className="text-sm font-semibold text-slate-200">
