@@ -5,6 +5,7 @@ import QuizPage from './pages/QuizPage'
 import ResultsPage from './pages/ResultsPage'
 import TestMode from './pages/TestMode'
 import TestResults from './pages/TestResults'
+import TestSetup from './pages/TestSetup'
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
             <Route index element={<ModuleSelection />} />
             <Route path="quiz/:moduleId" element={<QuizPage />} />
             <Route path="results/:moduleId" element={<ResultsPage />} />
-            <Route path="test" element={<TestMode />} />
+            <Route path="test" element={<TestSetup />} />
+            <Route path="test/session" element={<TestMode />} />
             <Route path="test/results" element={<TestResults />} />
           </Routes>
         </main>

@@ -70,12 +70,12 @@ function ModuleSelection() {
                             <div className="space-y-2">
                                 <h2 className="text-xl font-semibold text-white">Modo Test Integral</h2>
                                 <p className="text-sm text-slate-300">
-                                    Enfréntate a 10 casos aleatorios tomados de todo el banco clínico. Sin opciones múltiples:
+                                    Enfréntate a 10 casos aleatorios y decide en qué módulos quieres ser evaluado. Sin opciones múltiples:
                                     escribe la conducta correcta y valida cuánto dominas cada servicio.
                                 </p>
                                 <dl className="flex flex-wrap gap-3 text-xs text-slate-400">
                                     <div className="flex items-center gap-2 rounded-full border border-slate-800/80 bg-slate-900/60 px-3 py-1">
-                                        <span className="font-semibold text-slate-100">Todos los módulos</span>
+                                        <span className="font-semibold text-slate-100">Selecciona los módulos</span>
                                     </div>
                                     <div className="flex items-center gap-2 rounded-full border border-slate-800/80 bg-slate-900/60 px-3 py-1">
                                         <span className="font-semibold text-slate-100">10 preguntas</span>

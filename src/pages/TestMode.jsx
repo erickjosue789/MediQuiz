@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useEffect, useMemo, useState } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { IoChevronBack } from 'react-icons/io5'
 import { PiExamFill } from 'react-icons/pi'
 import { modules } from '../data/modules'
@@ -9,15 +9,16 @@ import FeedbackToast from '../components/FeedbackToast'
 
 const GLOBAL_POOL_KEY = 'global-test-mode'
 
-const aggregatedQuestionPool = modules.flatMap((module) =>
-  module.questions.map((question) => ({
-    ...question,
-    options: [...question.options],
-    moduleId: module.id,
-    moduleTitle: module.title,
-    moduleDifficulty: module.difficulty
-  }))
-)
+const buildQuestionPool = (selectedModules) =>
+  selectedModules.flatMap((module) =>
+    module.questions.map((question) => ({
+      ...question,
+      options: [...question.options],
+      moduleId: module.id,
+      moduleTitle: module.title,
+      moduleDifficulty: module.difficulty
+    }))
+  )
 
 const normalizeText = (value = '') =>
   value
@@ -30,7 +31,37 @@ const normalizeText = (value = '') =>
 
 function TestMode() {
   const navigate = useNavigate()
-  const questionPool = aggregatedQuestionPool
+  const location = useLocation()
+
+  const selectedModuleIds = useMemo(() => {
+    const params = new URLSearchParams(location.search)
+    const paramValue = params.get('modules')
+    const availableIds = new Set(modules.map((module) => module.id))
+
+    if (!paramValue) {
+      return modules.map((module) => module.id)
+    }
+
+    const parsedIds = paramValue
+      .split(',')
+      .map((value) => value.trim())
+      .filter(Boolean)
+      .filter((id) => availableIds.has(id))
+
+    return parsedIds.length > 0 ? parsedIds : modules.map((module) => module.id)
+  }, [location.search])
+
+  const selectedModules = useMemo(
+    () => modules.filter((module) => selectedModuleIds.includes(module.id)),
+    [selectedModuleIds]
+  )
+
+  const questionPoolKey = useMemo(
+    () => `${GLOBAL_POOL_KEY}:${[...selectedModuleIds].sort().join('|')}`,
+    [selectedModuleIds]
+  )
+
+  const questionPool = useMemo(() => buildQuestionPool(selectedModules), [selectedModules])
   const [activeQuestions, setActiveQuestions] = useState([])
   const [metadata, setMetadata] = useState({ batchSize: 10, delivered: 0, totalPool: questionPool.length, cycle: 1 })
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -41,10 +72,12 @@ function TestMode() {
 
   useEffect(() => {
     if (questionPool.length === 0) {
+      setActiveQuestions([])
+      setMetadata((prev) => ({ ...prev, totalPool: 0, delivered: 0 }))
       return
     }
 
-    const batch = getQuestionBatch(GLOBAL_POOL_KEY, questionPool, 10)
+    const batch = getQuestionBatch(questionPoolKey, questionPool, 10)
     setActiveQuestions(batch.questions)
     setMetadata(batch.metadata)
     setCurrentIndex(0)
@@ -52,13 +85,19 @@ function TestMode() {
     setUserAnswer('')
     setFeedback('')
     setToastInfo({ isVisible: false, message: '', key: Date.now() })
-  }, [questionPool])
+  }, [questionPool, questionPoolKey])
 
   if (questionPool.length === 0) {
     return (
       <section className="flex min-h-[60vh] flex-col items-center justify-center gap-3 text-center">
-        <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Cargando banco clínico</p>
-        <p className="text-lg text-slate-200">Estamos preparando tus casos de guardia...</p>
+        <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Configura el modo test</p>
+        <p className="text-lg text-slate-200">Elige al menos un módulo para generar los casos.</p>
+        <Link
+          to="/test"
+          className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-5 py-2 text-sm font-semibold text-emerald-950 transition hover:bg-emerald-300"
+        >
+          Seleccionar módulos
+        </Link>
       </section>
     )
   }
@@ -124,7 +163,7 @@ function TestMode() {
   }
 
   const handleQuit = () => {
-    navigate('/')
+    navigate('/test')
   }
 
   const handleToastClose = () => {
@@ -145,13 +184,23 @@ function TestMode() {
             <p className="text-xs text-slate-500">
               Ciclo clínico #{metadata.cycle} · Banco total: {metadata.totalPool} casos
             </p>
+            <div className="mt-3 flex flex-wrap gap-2 text-xs text-slate-400">
+              {selectedModules.map((module) => (
+                <span
+                  key={module.id}
+                  className="rounded-full border border-slate-800/80 bg-slate-900/60 px-3 py-1"
+                >
+                  {module.title}
+                </span>
+              ))}
+            </div>
           </div>
           <Link
-            to="/"
+            to="/test"
             className="inline-flex items-center gap-2 self-start rounded-full border border-slate-800 bg-slate-900/70 px-4 py-2 text-xs font-semibold text-slate-200 transition hover:border-slate-700 hover:bg-slate-900"
           >
             <IoChevronBack aria-hidden="true" />
-            Regresar a módulos
+            Ajustar módulos
           </Link>
         </div>
 
